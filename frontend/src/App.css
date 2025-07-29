@@ -1,0 +1,62 @@
+/* Additional custom styles for the video transcription app */
+
+.video-upload-zone {
+  transition: all 0.3s ease;
+}
+
+.video-upload-zone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.processing-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.progress-bar {
+  transition: width 0.3s ease;
+}
+
+.transcription-text {
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Responsive design improvements */
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .main-card {
+    margin: 0 0.5rem;
+  }
+}
+
+/* Custom scrollbar for transcription preview */
+.transcription-preview::-webkit-scrollbar {
+  width: 6px;
+}
+
+.transcription-preview::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.transcription-preview::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.transcription-preview::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
